@@ -87,6 +87,7 @@
         }
       },
       handleItemClick (obj) {
+        this.hideSubMenu = !this.hideSubMenu;
         this.currentCode = obj.dialCode
         // 更改父组件的值
         this.$emit('update:countryCode', obj.dialCode)
